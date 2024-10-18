@@ -63,36 +63,6 @@ export function procesarArchivo() {
     }, 1000);
   });
 }
-```
-
-4 - ¿Cómo mejorarías el siguiente código y por qué? Arregla los tests si es necesario:
-
-```javascript
-import fs from 'node:fs';
-
-export function leerArchivos() {
-  const archivo1 = fs.readSync('archivo1.txt', 'utf8');
-  const archivo2 = fs.readSync('archivo2.txt', 'utf8');
-  const archivo3 = fs.readSync('archivo3.txt', 'utf8');
-
-  return `${archivo1} ${archivo2} ${archivo3}`
-}
-
-leerArchivos();
-```
-
-5 - Escribe una funcion `delay` que retorne una promesa que se resuelva después de `n` milisegundos. Por ejemplo:
-
-```javascript
-export async function delay () {
-  // ...
-}
-
-delay(3000).then(() => console.log('Hola mundo'));
-// o..
-await delay(3000)
-console.log('Hola mundo')
-```
 
 6. Vamos a crear nuestra propia utilidad `dotenv` en el archivo `dotenv.js`.
 
