@@ -27,17 +27,7 @@ ping('amazon.com', (err, info) => {
 })
 ```
 
-2 - Transforma la siguiente función para que funcione con promesas en lugar de callbacks:
-
-```javascript
-export function obtenerDatosPromise(callback) {
-  setTimeout(() => {
-    callback(null, { data: 'datos importantes' });
-  }, 2000);
-}
-```
-
-3 - Explica qué hace la funcion. Identifica y corrige los errores en el siguiente código. Si ves algo innecesario, elimínalo. Luego mejoralo para que siga funcionando con callback y luego haz lo que consideres para mejorar su legibilidad.
+2 - Explica qué hace la funcion. Identifica y corrige los errores en el siguiente código. Si ves algo innecesario, elimínalo. Luego mejoralo para que siga funcionando con callback y luego haz lo que consideres para mejorar su legibilidad.
 
 ```javascript
 export function procesarArchivo() {
@@ -63,8 +53,8 @@ export function procesarArchivo() {
     }, 1000);
   });
 }
-
-6. Vamos a crear nuestra propia utilidad `dotenv` en el archivo `dotenv.js`.
+```
+3. Vamos a crear nuestra propia utilidad `dotenv` en el archivo `dotenv.js`.
 
 - La utilidad debe devolver un método `config` que lee el archivo `.env` y añade las variables de entorno que haya en el archivo al objeto `process.env`.
 - Por ejemplo si tu archivo `.env` contiene:
@@ -100,7 +90,7 @@ Cosas a tener en cuenta:
 - Las variables de entorno siempre son strings, por lo que si en el archivo `.env` hay un número, por ejemplo `PORT=8080`, al leerlo con `fs` y añadirlo a `process.env` debe ser un string, no un número.
 - `process.env` es un objeto y, por lo tanto, es mutable. Esto significa que podemos añadir propiedades nuevas sin problemas.
 
-7 - Diseña una API REST utilizando Express que permite a los usuarios crear, leer, modificar, actualizar y eliminar elementos de una lista.
+4 - Diseña una API REST utilizando Express que permite a los usuarios crear, leer, modificar, actualizar y eliminar elementos de una lista.
 
 La lista tendrá objetos que tienen la siguiente forma:
 
